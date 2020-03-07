@@ -160,22 +160,19 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .title .title-background-color {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @flex-center (flex);
   background-color: gainsboro;
   width: 142.3rem;
+}
+@media (min-width: 500px) {
+  .title .title-background-color {
+    background-color: red;
+  }
 }
 .title h1 {
   font-size: 5rem;
   margin: 2rem 0rem 2rem;
-  background-color: paleturquoise;
 }
 .title nav {
   display: flex;
@@ -183,7 +180,6 @@ p {
   width: 50rem;
   height: 4rem;
   font-size: 2.5rem;
-  background-color: palevioletred;
 }
 .title a {
   color: black;
@@ -241,6 +237,10 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: black;
 }
 .home .walk .walk-img {
   width: 46%;
