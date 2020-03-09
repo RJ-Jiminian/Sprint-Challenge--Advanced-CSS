@@ -1,13 +1,9 @@
 // Navigation code here
 .title{
+    .flex-align(column,center);
 
-   .title-background-color{
-       @flex-center(flex);
-       background-color:gainsboro;
-       width:142.3rem;
-       @media (min-width:500px){
-           background-color:red;
-       }
+    .title-background-color{
+       .flex-align(column,center); 
 
    }     
 
@@ -18,8 +14,7 @@
    } 
   
    nav{
-       display:flex;
-       justify-content: space-between;
+       .flex-center(row,space-evenly);
        width:50rem;
        height:4rem;
        font-size:2.5rem;
@@ -29,6 +24,15 @@
        color:black;
        font-weight:bold;
        text-decoration: none;   
+    }
 
-}
+    img{
+        border-radius: 1.0rem;
+    }
+
+    @media(min-width:@phone){
+        width:30.0rem;
+
+    }
+
 }
